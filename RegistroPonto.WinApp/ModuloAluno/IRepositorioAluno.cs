@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RegistroPonto.WinApp.ModuloAluno
+﻿namespace RegistroPonto.WinApp.ModuloAluno
 {
     public interface IRepositorioAluno
     {
         void Adicionar(Aluno aluno);
-
+        void Editar(Aluno aluno);
+        void Excluir(Aluno aluno);
         List<Aluno> SelecionarTodos();
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace RegistroPonto.WinApp.ModuloAluno
+﻿namespace RegistroPonto.WinApp.ModuloTurma
 {
-    partial class VisualizarAlunosForm
+    partial class VisualizarTurmasForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,43 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBoxAlunos = new ListBox();
+            listBox1 = new ListBox();
             button1 = new Button();
             SuspendLayout();
             // 
-            // listBoxAlunos
+            // listBox1
             // 
-            listBoxAlunos.FormattingEnabled = true;
-            listBoxAlunos.ItemHeight = 15;
-            listBoxAlunos.Location = new Point(12, 12);
-            listBoxAlunos.Name = "listBoxAlunos";
-            listBoxAlunos.Size = new Size(776, 364);
-            listBoxAlunos.TabIndex = 0;
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(81, 80);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(381, 199);
+            listBox1.TabIndex = 0;
             // 
             // button1
             // 
-            button1.Location = new Point(656, 397);
+            button1.Location = new Point(366, 322);
             button1.Name = "button1";
-            button1.Size = new Size(132, 41);
+            button1.Size = new Size(75, 23);
             button1.TabIndex = 1;
-            button1.Text = "Ok";
+            button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
-            // VisualizarAlunosForm
+            // VisualizarTurmasForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(559, 380);
             Controls.Add(button1);
-            Controls.Add(listBoxAlunos);
-            Name = "VisualizarAlunosForm";
-            Text = "VisualizarAlunosForm";
+            Controls.Add(listBox1);
+            Name = "VisualizarTurmasForm";
+            Text = "VisualizarTurmasForm";
             ResumeLayout(false);
         }
 
         #endregion
 
-        private ListBox listBoxAlunos;
+        private ListBox listBox1;
         private Button button1;
     }
 }

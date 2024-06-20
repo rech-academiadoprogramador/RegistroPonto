@@ -1,7 +1,8 @@
-﻿namespace RegistroPonto.WinApp.ModuloAluno
+﻿
+namespace RegistroPonto.WinApp.ModuloAluno
 {
     public class Aluno
-    {       
+    {
         public Aluno(int id, string nome, string telefone, string email, decimal percentualFrequencia)
         {
             this.Id = id;
@@ -21,6 +22,14 @@
         public override string ToString()
         {
             return $"{Id}, {Nome}, {Telefone}, {Email}, {PercentualFrequencia}";
+        }
+
+        internal void AtualizarDados(Aluno alunoAtualizado)
+        {
+            Nome = alunoAtualizado.Nome;
+            Telefone = alunoAtualizado.Telefone;
+            Email = alunoAtualizado.Email;
+            PercentualFrequencia = alunoAtualizado.PercentualFrequencia;
         }
     }
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RegistroPonto.WinApp.ModuloAluno;
 
 namespace RegistroPonto.WinApp.ModuloTurma
 {
@@ -11,6 +7,8 @@ namespace RegistroPonto.WinApp.ModuloTurma
         public int Id { get; set; }
         public string Periodo { get; set; }
         public int Ano { get; set; }
+
+        public List<Aluno> Alunos { get; set; }
 
         public override string ToString()
         {

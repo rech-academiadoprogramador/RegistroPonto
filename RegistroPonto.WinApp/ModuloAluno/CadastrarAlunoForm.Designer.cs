@@ -44,6 +44,7 @@
             // 
             // btnGravar
             // 
+            btnGravar.DialogResult = DialogResult.OK;
             btnGravar.Location = new Point(185, 236);
             btnGravar.Name = "btnGravar";
             btnGravar.Size = new Size(75, 49);
@@ -54,6 +55,7 @@
             // 
             // btnCancelar
             // 
+            btnCancelar.DialogResult = DialogResult.Cancel;
             btnCancelar.Location = new Point(266, 236);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 49);
@@ -160,7 +162,12 @@
             Controls.Add(label1);
             Controls.Add(btnCancelar);
             Controls.Add(btnGravar);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "CadastrarAlunoForm";
+            ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastrar Alunos";
             ResumeLayout(false);
             PerformLayout();
