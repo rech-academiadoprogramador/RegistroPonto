@@ -1,4 +1,6 @@
-﻿namespace RegistroPonto.WinApp.ModuloAluno
+﻿using RegistroPonto.WinApp.Compartilhado;
+
+namespace RegistroPonto.WinApp.ModuloAluno
 {
     public interface IRepositorioAluno
     {

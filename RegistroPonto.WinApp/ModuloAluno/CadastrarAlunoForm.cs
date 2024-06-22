@@ -35,9 +35,8 @@
             string nome = txtNome.Text;
             string telefone = txtTelefone.Text;
             string email = txtEmail.Text;
-            decimal percentualFrequencia = Convert.ToDecimal(txtPercentualFrequencia.Text);
 
-            return new Aluno(id, nome, telefone, email, percentualFrequencia);
+            return new Aluno(id, nome, telefone, email);
         }
     }
 }

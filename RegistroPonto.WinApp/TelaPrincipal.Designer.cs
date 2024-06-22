@@ -35,6 +35,7 @@
             panel1 = new Panel();
             btnEditarRegistros = new Button();
             btnExcluirRegistro = new Button();
+            rdbGerenciarChamadas = new RadioButton();
             SuspendLayout();
             // 
             // btnCadastrarRegistro
@@ -109,11 +110,24 @@
             btnExcluirRegistro.UseVisualStyleBackColor = true;
             btnExcluirRegistro.Click += btnExcluirRegistro_Click;
             // 
+            // rdbGerenciarChamadas
+            // 
+            rdbGerenciarChamadas.AutoSize = true;
+            rdbGerenciarChamadas.Location = new Point(394, 23);
+            rdbGerenciarChamadas.Name = "rdbGerenciarChamadas";
+            rdbGerenciarChamadas.Size = new Size(134, 19);
+            rdbGerenciarChamadas.TabIndex = 8;
+            rdbGerenciarChamadas.TabStop = true;
+            rdbGerenciarChamadas.Text = "Gerenciar Chamadas";
+            rdbGerenciarChamadas.UseVisualStyleBackColor = true;
+            rdbGerenciarChamadas.Click += moduloEscolhido_Click;
+            // 
             // TelaPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 593);
+            Controls.Add(rdbGerenciarChamadas);
             Controls.Add(btnExcluirRegistro);
             Controls.Add(btnEditarRegistros);
             Controls.Add(panel1);
@@ -136,5 +150,6 @@
         private Panel panel1;
         private Button btnEditarRegistros;
         private Button btnExcluirRegistro;
+        private RadioButton rdbGerenciarChamadas;
     }
 }
